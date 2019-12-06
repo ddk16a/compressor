@@ -1,4 +1,3 @@
 # compressor
 
-#test
-`mvn test`
+#test `mvn test`
