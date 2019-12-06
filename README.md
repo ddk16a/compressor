@@ -1,6 +1,7 @@
-## compressor
+###Compressor###
 
-##Instalation
+##Instalation##
 `git clone`
 
-##test `mvn test`
+##test##
+`mvn test`
