@@ -9,7 +9,12 @@
 
 	Note: compresses the file denoted by <file_name> using LZW.
 
-	Example java SchubsL pork.cat
+	Example: java SchubsL pork.cat  produces pork.cat.ll
+	-pork.cat.ll-
+	0490 2007 4068 0690 6e06 b020 0700 6f07
+	2063 0750 7010 5065 0730 2006 1072 0651
+	0811 4074 0740 7911 206d 0610 7a10 5067
+	1000 
 */
 
 public class SchubsL {

@@ -9,7 +9,11 @@
 
 	Note: compresses the file denoted by <file_name> using Huffman.
 
-	Example java SchubsH pork.cat
+	Example java SchubsH pork.cat produces pork.cat.hh
+	-pork.cat.hh-
+	169b 08b6 d9d7 3b79 63b5 aeb7 9240 b95d
+	0b2d c16e 5a14 9bd0 0000 012f d2fc 39b3
+	574c 768e c543 5936 b2ed f0a0 fe39 20
 */
 
 public class SchubsH {
