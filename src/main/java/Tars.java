@@ -2,6 +2,14 @@
 	Class: Software Engineering 2
 	Author:	Daniel Keller
 	Date:	11/22/2019
+
+	Compilation: javac Tars.java
+	Execution: java Tars <archive_name> <file_name>..
+	Dependencies: BinaryIn.java, BinaryOut.java
+
+	Note: creates a tar file with all the files denoted by <file_name>..
+
+	Example java Tars blee.tar pork.cat shells.sea
 */
 import java.io.IOException;
 import java.io.File;

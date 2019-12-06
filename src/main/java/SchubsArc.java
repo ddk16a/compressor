@@ -2,6 +2,15 @@
 	Class: Software Engineering 2
 	Author: Daniel Keller
 	Date: 12/4/2019
+
+	Compilation: javac SchubesArc.java
+	Execution: java SchubesArc <archive_name> <file_name>...
+	Dependencies: Tars.java, LZW.java
+
+	Note: a tar file will be created with the files denoted by <file_name>.. and that tar file will be compressed with
+		LZW. The extension zl will be added to <archive_name> and that will be the result file
+
+	Example java SchubesSrc arc pork.txt
 */
 
 import java.nio.file.Files;

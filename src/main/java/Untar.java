@@ -2,6 +2,14 @@
 	Class: Software Engineering 2
 	Author:	Daniel Keller
 	Date:	11/22/2019
+
+	Compilation: javac Untars.java
+	Execution: java Untars <archive_name>
+	Dependencies: BinaryIn.java, BinaryOut.java
+
+	Note: recreats all the files contained within the file <archive_name>
+
+	Example java Untars blee.tar
 */
 
 import java.io.IOException;

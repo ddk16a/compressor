@@ -2,6 +2,14 @@
 	Class: Software Engineering
 	Author: Daniel Keller
 	Date: 12/4/2019
+
+	Compilation: javac SchubsL.java
+	Execution: java SchubsL <file_name>
+	Dependencies: LZW.java
+
+	Note: compresses the file denoted by <file_name> using LZW.
+
+	Example java SchubsL pork.cat
 */
 
 public class SchubsL {
