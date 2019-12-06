@@ -1,7 +1,6 @@
 # Compressor
 ### Algorithm Theroy and Tradeoffs
-#### Huffman
-Huffman builds a trie using the frequncy of characters found in the file to have a code optimized fo the specific file it is compressing
+**Huffman** builds a trie using the frequncy of characters found in the file to have a code optimized fo the specific file it is compressing
 
 Pors:
 - Optimized code for the specific file
@@ -10,8 +9,7 @@ Cons:
 - Must read the file twice
 - Must include the trie in the file so the decompressor can know how to decompress the file
 
-#### LZW
-LZW builds a code as the file is read by identify patterns of charachters and assigning a character to represent the pattern.
+**LZW** builds a code as the file is read by identify patterns of charachters and assigning a character to represent the pattern.
 
 Pros:
 - Only reads the file once
