@@ -1,3 +1,6 @@
-# compressor
+## compressor
 
-#test `mvn test`
+##Instalation
+`git clone`
+
+##test `mvn test`
