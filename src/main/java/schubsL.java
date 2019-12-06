@@ -4,7 +4,7 @@
 	Date: 12/4/2019
 */
 
-public class schubsL {
+public class SchubsL {
 	public static void main(String[] args) {
 		//compresses each and adds the '.ll' extension to the file (blee.txt.ll)
 		for (int i = 0; i < args.length; i++)

@@ -4,7 +4,7 @@
 	Date: 12/4/2019
 */
 
-public class schubsH {
+public class SchubsH {
 	public static void main(String[] args) {
 		//compresses each and adds the '.hh' extension to the end (blee.txt.hh)
 		for (int i = 0; i < args.length; i++)

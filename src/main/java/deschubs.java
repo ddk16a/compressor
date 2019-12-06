@@ -8,7 +8,7 @@ import org.apache.commons.io.FilenameUtils;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class deschubs {
+public class Deschubs {
 	public static void main(String[] args) {
 		//if it was compressed be Huffman
 		if (FilenameUtils.getExtension(args[0]).equals("hh"))
