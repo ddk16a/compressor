@@ -64,10 +64,10 @@ public class SchubsLTest {
 
 	void testSingleFile(String filename) throws IOException {
 		//compress it
-		schubsL.main(new String[] { filename });
+		SchubsL.main(new String[] { filename });
 
 		//decompress the file
-		deschubs.main(new String[] { filename.concat(".ll") });
+		Deschubs.main(new String[] { filename.concat(".ll") });
 
 		//compare the files
 		compareFiles(filename.replace("files","originalFiles"), filename);
@@ -75,12 +75,12 @@ public class SchubsLTest {
 
 	void testMultipleFiles(String[] filenames) throws IOException {
 		//compress it
-		schubsL.main(filenames);
+		SchubsL.main(filenames);
 
 		//for each file
 		for (int i = 0; i < filenames.length; i++) {
 			//decompress the file
-			deschubs.main(new String[] { filenames[i].concat(".ll") });
+			Deschubs.main(new String[] { filenames[i].concat(".ll") });
 
 			//compare the files
 			compareFiles(filenames[i].replace("files","originalFiles"), filenames[i] );

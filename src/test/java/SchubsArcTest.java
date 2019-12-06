@@ -65,10 +65,10 @@ public class SchubsArcTest {
 		String[] args = new String[] {FOLDER+"arc",FOLDER+"empty.txt",FOLDER+"pork.txt",FOLDER+"reeves.txt",FOLDER+"shells.txt"};
 
 		//compress the files
-		schubsArc.main(args);
+		SchubsArc.main(args);
 
 		//decompress them
-		deschubs.main(new String[] { args[0].concat(".zl") });
+		Deschubs.main(new String[] { args[0].concat(".zl") });
 
 		//compare each file to the file produces by deschubing the .zz file
 		for (int i = 1; i < args.length; i++)

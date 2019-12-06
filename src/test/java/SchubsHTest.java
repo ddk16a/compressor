@@ -63,10 +63,10 @@ public class SchubsHTest {
 
 	void testSingleFile(String filename) throws IOException {
 		//compress it
-		schubsH.main(new String[] { filename });
+		SchubsH.main(new String[] { filename });
 
 		//decompress the file
-		deschubs.main(new String[] { filename.concat(".hh") });
+		Deschubs.main(new String[] { filename.concat(".hh") });
 
 		//compare the files
 		compareFiles(filename.replace("files", "originalFiles"), filename);
@@ -74,12 +74,12 @@ public class SchubsHTest {
 
 	void testMultipleFiles(String[] filenames) throws IOException {
 		//compress it
-		schubsH.main(filenames);
+		SchubsH.main(filenames);
 
 		//for each file
 		for (int i = 0; i < filenames.length; i++) {
 			//decompress the file
-			deschubs.main(new String[] { filenames[i].concat(".hh") });
+			Deschubs.main(new String[] { filenames[i].concat(".hh") });
 
 			//compare the files
 			compareFiles(filenames[i].replace("files", "originalFiles"), filenames[i]);
