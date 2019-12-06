@@ -22,7 +22,7 @@ public class SchubsHTest {
 
 	@BeforeClass
 	public static void saveOriginals() {
-		String[] originals = new String[] {FOLDER+"empty.txt", FOLDER+"pork.txt", FOLDER+"reeves.txt", FOLDER+"shells.txt"};
+		String[] originals = new String[] {FOLDER+"empty.txt", FOLDER+"pork.cat", FOLDER+"reeves.txt", FOLDER+"shells.sea"};
 		for (int i = 0; i < originals.length; i++)
 			try {
 				Files.copy(Paths.get(originals[i]), Paths.get(originals[i].replace("files", "originalFiles")), StandardCopyOption.REPLACE_EXISTING);
@@ -34,7 +34,7 @@ public class SchubsHTest {
 
 	@AfterClass
 	public static void restoreOriginals() {
-		String[] originals = new String[] {FOLDER+"empty.txt", FOLDER+"pork.txt", FOLDER+"reeves.txt", FOLDER+"shells.txt"};
+		String[] originals = new String[] {FOLDER+"empty.txt", FOLDER+"pork.cat", FOLDER+"reeves.txt", FOLDER+"shells.sea"};
 		for (int i = 0; i < originals.length; i++)
 			try {
 				Files.copy(Paths.get(originals[i].replace("files", "originalFiles")), Paths.get(originals[i]), StandardCopyOption.REPLACE_EXISTING);
@@ -93,7 +93,7 @@ public class SchubsHTest {
 
 	@Test
 	public void pork() throws IOException {
-		testSingleFile(FOLDER+"pork.txt");
+		testSingleFile(FOLDER+"pork.cat");
 	}
 
 	@Test
@@ -103,11 +103,11 @@ public class SchubsHTest {
 
 	@Test
 	public void shells() throws IOException {
-		testSingleFile(FOLDER+"shells.txt");
+		testSingleFile(FOLDER+"shells.sea");
 	}
 
 	@Test
 	public void glob() throws IOException {
-		testMultipleFiles(new String[] {FOLDER+"empty.txt", FOLDER+"pork.txt", FOLDER+"reeves.txt", FOLDER+"shells.txt"});
+		testMultipleFiles(new String[] {FOLDER+"empty.txt", FOLDER+"pork.cat", FOLDER+"reeves.txt", FOLDER+"shells.sea"});
 	}
 }
