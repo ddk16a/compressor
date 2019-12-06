@@ -7,8 +7,8 @@
 Navigate to the folder
 ``
 .
-+--	src
-+-- pom.xml
-+-- README.md
+├──	src
+├── pom.xml
+└── README.md
 ``
 and run `mvn test`
