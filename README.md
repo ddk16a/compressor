@@ -20,7 +20,7 @@ Cons:
 
 
 ### Instalation
-`git clone`
+`git clone https://github.com/ddk16a/compressor`
 
 ### Test
 Navigate to the folder that looks like
