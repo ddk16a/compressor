@@ -21,7 +21,7 @@ public class Deschubs {
 	public static void main(String[] args) {
 		//if it was compressed be Huffman
 		String extension = FilenameUtils.getExtension(args[0]);
-		if (.equals("hh"))
+		if (extension.equals("hh"))
 			HuffmanSE2.expand(new BinaryIn(args[0]), new BinaryOut(FilenameUtils.removeExtension(args[0])));
 		//if it was compressed by LZW
 		else if (extension.equals("ll"))
