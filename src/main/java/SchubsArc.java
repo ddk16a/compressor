@@ -15,7 +15,6 @@
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import org.apache.commons.io.FilenameUtils;
 
 public class SchubsArc {
 	public static void main(String[] args) {
